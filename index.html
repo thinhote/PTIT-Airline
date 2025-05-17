@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>PTIT AIRLINE</title>
+  </head>
+  <body style="background-image: url('assets/background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                ">
+  </body>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="logo">
+          </a>
+          <!-- <img src="assets/logo.png" alt="logo"> -->
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="tourpage.html">TOUR</a></li>
+        <li><a href="package.html">TRỌN GÓI</a></li>
+        <li><a href="contact.html">LIÊN HỆ</a></li>
+	<li><a href="about.html">ABOUT US</a></li>
+        <li><a href="#">ĐẶT VÉ NGAY</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="booking.html" class="btn">ĐẶT VÉ NGAY</a>
+        <a href="lookup.html" class="btn" id="lookup-btn">TRA CỨU VÉ</a>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>NÂNG CAO HÀNH TRÌNH DU LỊCH CỦA BẠN</p>
+          <h1>Trải nghiệm sự kỳ diệu của chuyến bay!</h1>
+          <div class="header__btns">
+            <a href="booking.html"><button class="btn">Đặt chuyến đi ngay</button></a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header">Điểm đến phổ biến</h2>
+      <p class="section__description">
+        Khám phá những điểm đến được yêu thích nhất trên toàn cầu
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/destination-5.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Thành phố vĩnh cửu</h4>
+              <p>Rome, Italy</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-4.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Kinh Đô Ánh Sáng</h4>
+              <p>Paris, France</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Đảo của các vị thần</h4>
+              <p>Bali, Indonesia</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header">Hành trình lên bầu trời thật đơn giản!</h2>
+      <p class="section__description">
+        Lập kế hoạch dễ dàng cho cuộc phiêu lưu tiếp theo của bạn
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Quy trình đặt phòng liền mạch</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Đặt chỗ dễ dàng chỉ với một cú nhấp chuột</h4>
+            <p>
+              Từ chuyến bay và chỗ ở đến các hoạt động và dịch vụ đưa đón,
+              mọi thứ bạn cần đều có sẵn trong tầm tay, giúp bạn đi du lịch
+              lập kế hoạch dễ dàng.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Hành trình phù hợp</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Các gói tùy chỉnh dành riêng cho bạn</h4>
+            <p>
+              Tận hưởng các kế hoạch du lịch được cá nhân hóa được thiết kế phù hợp với sở thích của bạn
+              và lợi ích. Cho dù bạn tìm kiếm sự phiêu lưu hay hòa nhập văn hóa,
+              hành trình phù hợp của chúng tôi đảm bảo hành trình của bạn là của riêng bạn.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Thông tin chuyên sâu về địa phương của chuyên gia</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Lời khuyên và khuyến nghị của người trong cuộc</h4>
+            <p>
+              Chúng tôi cung cấp các đề xuất được tuyển chọn về ăn uống, tham quan và
+              những viên ngọc ẩn, để bạn có thể trải nghiệm từng điểm đến như một người dân địa phương.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4>GIẢI QUYẾT KHÁM PHÁ VỚI PTIT Airline</h4>
+        <p>
+          Bắt tay vào một cuộc hành trình không giống ai với PTIT Airline, nơi chuyến du lịch của bạn
+          những giấc mơ trở nên sống động. Sứ mệnh của chúng tôi là truyền cảm hứng và tạo điều kiện cho bạn
+          cuộc phiêu lưu, cho dù bạn tìm kiếm năng lượng sôi động của nhộn nhịp
+          cảnh quan thành phố, vẻ đẹp thanh bình của những bãi biển hoang sơ, hay vẻ đẹp quyến rũ
+          lịch sử các địa danh cổ xưa. Tại PTIT Airline, chúng tôi cung cấp các dịch vụ được tuyển chọn một cách chuyên nghiệp
+          các điểm đến và hành trình được cá nhân hóa, đảm bảo rằng mỗi chuyến đi đều được
+          phù hợp với sở thích riêng của bạn. Khám phá những viên ngọc ẩn, đắm chìm
+          mình trong những nền văn hóa đa dạng và tạo ra những kỷ niệm khó quên
+          sẽ kéo dài suốt đời.
+        </p>
+        <p>
+          Với PTIT Airline là người bạn đồng hành cuối cùng của bạn, khám phá những điều kỳ diệu
+          của thế giới chưa bao giờ dễ dàng hơn thế. Lời khuyên nội bộ của chúng tôi và địa phương
+          thông tin chi tiết cung cấp cho bạn công cụ để điều hướng các địa điểm mới một cách tự tin và
+          sự phấn khích. Từ thời điểm bạn bắt đầu lên kế hoạch cho đến ngày bạn trở về
+          home, chúng tôi tận tâm giúp trải nghiệm du lịch của bạn trở nên liền mạch và
+          làm giàu thêm.
+        </p>
+        <div class="showcase__btn">
+          <a href="booking.html"><button class="btn">Đặt chuyến bay NGAY</button></a>
+           <a href="#"><span><i class="ri-play-circle-fill"></i></span></a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>10+</h4>
+        <p>Năm kinh nghiệm</p>
+      </div>
+      <div class="banner__card">
+        <h4>12K</h4>
+        <p>Khách hàng vui vẻ</p>
+      </div>
+      <div class="banner__card">
+        <h4>4.8</h4>
+        <p>Đánh giá chung</p>
+      </div>
+    </section>
+
+    <section class="section__container discover__container">
+      <h2 class="section__header">Khám phá thế giới từ trên cao</h2>
+      <p class="section__description">
+        Trải nghiệm những khung cảnh ngoạn mục và những góc nhìn độc đáo
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-camera-lens-line"></i></span>
+          <h4> Cảnh quan thành phố trên không</h4>
+          <p>
+            Chứng kiến ​​những tuyệt tác kiến ​​trúc và những con phố nhộn nhịp từ
+            tầm nhìn toàn cảnh, mang lại góc nhìn độc đáo.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-ship-line"></i></span>
+          <h4>Kỳ quan ven biển</h4>
+          <p>
+            Bay qua những bờ biển hoang sơ và làn nước trong xanh, khám phá những điều ẩn giấu
+            vịnh nhỏ và những rạn san hô rực rỡ.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Địa danh lịch sử</h4>
+          <p>
+            Quan sát sự hùng vĩ của lâu đài cổ và các địa điểm quan trọng khác
+            theo cách mà các tour du lịch mặt đất không thể mang lại.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container">
+      <h2 class="section__header">Được yêu thích bởi hơn nghìn khách du lịch</h2>
+      <p class="section__description">
+        Khám phá những câu chuyện về niềm đam mê du lịch và những kỷ niệm đáng nhớ thông qua
+        trong mắt các khách hàng quý giá của chúng tôi.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  PTIT Airline đã thay đổi hoàn toàn trải nghiệm du lịch của tôi. Từ
+                  tìm những viên ngọc ẩn trong những thành phố nhộn nhịp để khám phá sự thanh thản
+                  rút lui khỏi con đường bị đánh đập, mọi chi tiết đều được chăm chút kỹ lưỡng
+                  sắp xếp. Tôi không thể giới thiệu PTIT Airline đủ cho bất cứ ai đang tìm kiếm
+                  để nâng cao trải nghiệm du lịch của họ!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>John Adams</h4>
+                  <h5>Travel Blogger</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Chuyến phiêu lưu gần đây của tôi với PTIT Airline thật tuyệt vời
+                  hùng vĩ. Hành trình và đề xuất được cá nhân hóa
+                  họ cung cấp đã dẫn tôi đến những địa điểm đặc biệt mà tôi sẽ
+                  chưa bao giờ tự mình tìm thấy. Tôi đã lên kế hoạch tiếp theo
+                  cuộc phiêu lưu với họ!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Emily Thompson</h4>
+                  <h5>Adventure Enthusiast</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  PTIT Airline mang lại trải nghiệm mang tính thay đổi cho nghiên cứu của tôi
+                  thành các địa danh lịch sử. Những góc nhìn trên không độc đáo và
+                  đã cung cấp một mức độ đánh giá cao và cái nhìn sâu sắc mới về
+                  các trang web tôi đã nghiên cứu. Tôi đặc biệt giới thiệu dịch vụ của họ cho đồng nghiệp
+                  các nhà sử học và những người đam mê văn hóa.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Sarah Lee</h4>
+                  <h5>Cultural Historian</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Việc tìm kiếm sự cân bằng giữa công việc và du lịch có thể là một thách thức,
+                  nhưng PTIT Airline đã làm được điều đó một cách dễ dàng. Việc lập kế hoạch hiệu quả của họ và
+                  những đề xuất tuyệt vời đã giúp tôi tối đa hóa thời gian ngừng hoạt động và
+                  tận hưởng từng khoảnh khắc trong chuyến đi của tôi. Tôi mong được làm việc với
+                  họ một lần nữa trong những chuyến đi trong tương lai.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>David Patel</h4>
+                  <h5>Business Executive</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">PTIT Airline</a>
+          </div>
+          <p>
+            Khám phá thế giới dễ dàng và đầy hứng khởi với những chuyến bay tuyệt vời từ chúng tôi.
+          </p>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Liên kết</h4>
+          <ul class="footer__links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Khách sạn</a></li>
+            <li><a href="#">Du thuyền</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Liên hệ chúng tôi</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +84 362.137.827
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@PTITAirline
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Hà Nội, Việt Nam
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Đăng ký</h4>
+          <form action="/">
+            <input type="text" placeholder="Nhập email của bạn" />
+            <button class="btn">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
+

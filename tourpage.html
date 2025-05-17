@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Điểm đến du lịch | PTIT Airline</title>
+  </head>
+  <body style="background-image: url('assets/background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                ">
+  </body>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="logo">
+          </a>
+          <!-- <img src="assets/logo.png" alt="logo"> -->
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="tourpage.html">TOUR</a></li>
+        <li><a href="package.html">TRỌN GÓI</a></li>
+        <li><a href="contact.html">LIÊN HỆ</a></li>
+	<li><a href="about.html">ABOUT US</a></li>
+        <li><a href="#">ĐẶT VÉ NGAY</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="booking.html" class="btn">ĐẶT VÉ NGAY</a>
+        <a href="lookup.html" class="btn">TRA CỨU VÉ</a>
+      </div>
+    </nav>
+
+    <section class="section__container tour__container">
+      <h2 class="section__header">Khám phá những tour du lịch tuyệt vời của chúng tôi</h2>
+      <p class="section__description">
+        Khám phá những điểm đến tuyệt vời được thiết kế riêng dành cho bạn
+      </p>
+      <br>
+
+      <div class="tour__filters">
+        <button class="tour__filter-btn active" data-filter="all">Tất cả</button>
+        <button class="tour__filter-btn" data-filter="city">Thành phố</button>
+        <button class="tour__filter-btn" data-filter="beach">Bãi biển</button>
+        <button class="tour__filter-btn" data-filter="romantic">Lãng mạn</button>
+      </div>
+
+      <div class="tour__grid">
+        <div class="tour__card" data-category="city">
+          <div class="tour__card-image">
+            <img src="assets/destination-8.jpg" alt="Khám phá Đà Nẵng">
+            <div class="tour__card-rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+          <div class="tour__card-details">
+            <h4>Khám phá Đà Nẵng</h4>
+            <div class="tour__card-info">
+              <p><i class="ri-map-pin-line"></i> Đà Nẵng, Việt Nam</p>
+              <p><i class="ri-time-line"></i> 7 Ngày</p>
+            </div>
+            <div class="tour__card-bottom">
+              <h5>15.000.000đ</h5>
+              <button class="btn btn-small">Đặt ngay</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour__card" data-category="romantic">
+          <div class="tour__card-image">
+            <img src="assets/destination-2.jpg" alt="Thành phố biển Nha Trang">
+            <div class="tour__card-rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+          <div class="tour__card-details">
+            <h4>Thành phố biển Nha Trang</h4>
+            <div class="tour__card-info">
+              <p><i class="ri-map-pin-line"></i> Nha Trang, Việt Nam</p>
+              <p><i class="ri-time-line"></i> 5 Ngày</p>
+            </div>
+            <div class="tour__card-bottom">
+              <h5>20.000.000đ</h5>
+              <button class="btn btn-small">Đặt ngay</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour__card" data-category="beach">
+          <div class="tour__card-image">
+            <img src="assets/destination-6.jpg" alt="Thiên đường nhiệt đới Phú Quốc">
+            <div class="tour__card-rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+          <div class="tour__card-details">
+            <h4>Thiên đường nhiệt đới Phú Quốc</h4>
+            <div class="tour__card-info">
+              <p><i class="ri-map-pin-line"></i> Đảo Phú Quốc, Việt Nam</p>
+              <p><i class="ri-time-line"></i> 10 Ngày</p>
+            </div>
+            <div class="tour__card-bottom">
+              <h5>50.000.000</h5>
+              <button class="btn btn-small">Đặt ngay</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour__card" data-category="city">
+          <div class="tour__card-image">
+            <img src="assets/destination-9.png" alt="Chuyến phiêu lưu đô thị Tokyo">
+            <div class="tour__card-rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.6
+            </div>
+          </div>
+          <div class="tour__card-details">
+            <h4>Chuyến phiêu lưu đô thị Tokyo</h4>
+            <div class="tour__card-info">
+              <p><i class="ri-map-pin-line"></i> Tokyo, Nhật Bản</p>
+              <p><i class="ri-time-line"></i> 6 Ngày</p>
+            </div>
+            <div class="tour__card-bottom">
+              <h5>100.000.000</h5>
+              <button class="btn btn-small">Đặt ngay</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">PTIT Airline</a>
+          </div>
+          <p>
+            Khám phá thế giới dễ dàng và đầy hứng khởi với những chuyến bay tuyệt vời từ chúng tôi.
+          </p>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Liên kết</h4>
+          <ul class="footer__links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Khách sạn</a></li>
+            <li><a href="#">Du thuyền</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Liên hệ chúng tôi</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +84 362.137.827
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@PTITAirline
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Hà Nội, Việt Nam
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Đăng ký</h4>
+          <form action="/">
+            <input type="text" placeholder="Nhập email của bạn" />
+            <button class="btn">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tour.js"></script>
+  </body>
+</html>

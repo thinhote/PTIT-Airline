@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/lookup.css"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <title>Tra cứu vé | PTIT Airline</title>
+   
+</head>
+<body style="background-image: url('assets/background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                ">
+</body>
+<body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">
+              <img src="assets/logo.png" alt="logo">
+            </a>
+            <!-- <img src="assets/logo.png" alt="logo"> -->
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">TRANG CHỦ</a></li>
+          <li><a href="tourpage.html">TOUR</a></li>
+          <li><a href="package.html">TRỌN GÓI</a></li>
+          <li><a href="contact.html">LIÊN HỆ</a></li>
+	  <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="#">ĐẶT VÉ NGAY</a></li>
+        </ul>
+        <div class="nav__btns">
+            <a href="booking.html" class="btn">ĐẶT VÉ NGAY</a>
+          </div>
+    </nav>
+    <div class="form-container">
+        <h2 class="section__header">Nhập thông tin của bạn</h2>
+        <form action="lookup.php" method="POST">
+            <div class="form-group">
+                <label for="name">Họ tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ tên" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Tra cứu</button>
+            </div>
+        </form>
+
+        <?php if (!empty($message)): ?>
+            <div class="message">
+                <?php echo htmlspecialchars($message); ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (!empty($tickets)): ?>
+            <div class="ticket-list">
+                <h3>Danh sách vé đã đặt:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Thời điểm đặt vé</th>
+                            <th>Số hiệu chuyến bay</th>
+                            <th>Hạng vé</th>
+                            <th>Ngày giờ bay</th>
+                            <th>Số hiệu khứ hồi</th>
+                            <th>Hạng vé khứ hồi</th>
+                            <th>Ngày giờ khứ hồi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($tickets as $ticket): ?>
+                            <tr>
+                                <td><?php echo htmlspecialchars($ticket['BookingDate']); ?></td>
+                                <td><?php echo htmlspecialchars($ticket['FlightNumber']); ?></td>
+                                <td><?php echo htmlspecialchars($ticket['Class']); ?></td>
+                                <td><?php echo htmlspecialchars($ticket['FlightDateTime']); ?></td>
+                                <td><?php echo !empty($ticket['ReturnFlightNumber']) ? htmlspecialchars($ticket['ReturnFlightNumber']) : 'Không có'; ?></td>
+                                <td><?php echo !empty($ticket['ReturnClass']) ? htmlspecialchars($ticket['ReturnClass']) : 'Không có'; ?></td>
+                                <td><?php echo !empty($ticket['ReturnFlightDateTime']) ? htmlspecialchars($ticket['ReturnFlightDateTime']) : 'Không có'; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php endif; ?>
+    </div>
+    <footer id="contact">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <a href="#" class="logo">PTIT Airline</a>
+            </div>
+            <p>
+              Khám phá thế giới dễ dàng và đầy hứng khởi với những chuyến bay tuyệt vời từ chúng tôi.
+            </p>
+            <ul class="footer__socials">
+              <li><a href="https://www.facebook.com/HocvienPTIT"><i class="ri-facebook-fill"></i></a></li>
+              <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+              <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Liên kết</h4>
+            <ul class="footer__links">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Khách sạn</a></li>
+              <li><a href="#">Du thuyền</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Liên hệ chúng tôi</h4>
+            <ul class="footer__links">
+              <li>
+                <a href="#">
+                  <span><i class="ri-phone-fill"></i></span> +84 362.137.827
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="ri-record-mail-line"></i></span> info@PTITAirline
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="ri-map-pin-2-fill"></i></span> Hà Nội, Việt Nam
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Đăng ký</h4>
+            <form action="/">
+              <input type="text" placeholder="Nhập email của bạn" />
+              <button class="btn">Đăng ký</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bar">
+          All rights reserved.
+        </div>
+      </footer>
+</body>
+</html></div>
